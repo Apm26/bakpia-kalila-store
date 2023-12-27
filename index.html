@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Bakpia Kalila</title>
+
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/x-icon" href="images/logositus.png" />
+
+</head>
+
+<body>
+
+    <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="images/logositus.png" alt=""></a>
+            <h1 class="logoName">Bakpia Kalila Store </h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Beranda</a>
+            <a href="#product">Produk</a>
+            <a href="#blogs">Tentang</a>
+            <a href="#review">Galeri</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+            <i class="fas fa-shopping-cart" id="cart">
+                <span class="jumlahKeranjang">0</span>
+            </i>
+        </div>
+
+
+        <div class="search">
+            <input type="search" placeholder="cari produk...">
+            <button onclick="cariProduk()"></button>
+        </div>
+    </header>
+    <!-- header section end here  -->
+
+    <!-- home section start here  -->
+    <section class="home" id="home">
+        <div class="homeContent">
+            <h2>Bakpia Kulonprogo otentik </h2>
+            <p>Bakpia dengan cita rasa terbaik, kini dalam genggaman anda</p>
+            <div class="home-btn">
+                <a href="#product"><button class="orderNow">Cek sekarang</button></a>
+            </div>
+        </div>
+        <img class="homeLogo" src="images/image.png" alt="cake" srcset="">
+    </section>
+
+    <!-- home section end here  -->
+
+    <!-- product section start here  -->
+    <section class="product" id="product">
+        <div class="heading">
+            <h2>Produk ekslusif kami</h2>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Bakpia basah</h3>
+                        <p>varian bakpia yang berisi campuran pasta kacang hijau yang lembut, dikemas dalam kulit tepung yang kenyal, dan dinikmati dalam keadaan segar.a
+                        </p>
+                        <div class="orderNow">
+                            <button>Pesan sekarang </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake2.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Bakpia kering</h3>
+                        <p> versi kue yang dikeringkan dengan citarasa yang renyah, namun kulitnya lebih tipis dan memberikan sensasi rangup saat digigit.
+                        </p>
+                        <div class="orderNow">
+                            <button>Pesan sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake3.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Bakpia kukus</h3>
+                        <p>varian kue yang dihasilkan dengan metode pengukusan. Kue ini memiliki tekstur lembut dan aroma khas, dengan isi kacang hijau yang lezat di dalamnya.
+                        </p>
+                        <div class="orderNow">
+                            <button>Pesan sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake4.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Bakpia krispi</h3>
+                        <p>inovasi modern yang menambahkan elemen kerenyahan pada kue tradisional ini.
+                        </p>
+                        <div class="orderNow">
+                            <button>Pesan sekarang</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/topping1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Original</h3>
+                        <p>Otentik rasa kacang hijau
+                        </p>
+                        <div class="orderNow">
+                            <button>Pesan sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/topping2.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Topping coklat</h3>
+                        <p>Citarasa otentik dengan baluran topping coklat
+                        </p>
+                        <div class="orderNow">
+                            <button>Pesan sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/topping3.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Topping stroberi</h3>
+                        <p>Citarasa otentik dengan baluran topping stroberi
+                        </p>
+                        <div class="orderNow">
+                            <button>Pesan sekarang</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/topping4.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Topping coklat-stroberi</h3>
+                        <p>LCitarasa otentik dengan baluran topping coklat dan stroberi
+                        </p>
+                        <div class="orderNow">
+                            <button>Pesan sekarang</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- product section end here  -->
+
+    <!-- blogs section start here  -->
+    <section class="blogs" id="blogs">
+
+        <div class=" swiper blogs-row">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="images/logositus.png" alt="usaha">
+                    </div>
+                    <div class="content">
+                        <h3>Rebranding technopreneurship</h3>
+                        <p>Berfokus pada implemenntasi ide bisnis pada usaha UMKM bakpia lokal milik ibu Tutut</p>
+                        <p>Implementasi didasari dengan menekankan nilai-nilai orisinalitas produk sebagai citra utama produk dan adaptasi akan tren kuliner modern</p>
+
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="images/produksi1.jpeg" alt="alat">
+                    </div>
+                    <div class="content">
+                        <h3>Home industry bu Tutut</h3>
+                        <p>Usaha Bakpia Tutut merupakan home industry yang berfokus pada produksi dan penjualan bakpia lokal dengan cita rasa autentik dan kualitas premium. Terletak di kabupaten Kulon Progo, Daerah Istimewa Yogyakarta, kami menawarkan pengalaman kuliner yang unik dengan produk berkualitas tinggi dan menggugah selera, menjadi pilihan utama bagi masyarakat lokal dan wisatawan yang menghargai kuliner lokal otentik</p>
+
+
+                    </div>
+                </div>
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="images/cukurukuk.jpg" alt="tim">
+                    </div>
+                    <div class="content">
+                        <h3>Tim technopreneurship</h3>
+                        <p>merupakan implementasi bisnis pada  home industry bakpia tutut, yang berfokus pada kreasi produk didukung digital marmeting yang baik, dengan mempertahankan bakpia lokal dengan cita rasa autentik dan kualitas premium. Terletak di kabupaten Kulon Progo, Daerah Istimewa Yogyakarta, </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+
+        </div>
+    </section>
+
+    <!-- blogs section ends here  -->
+
+    <!-- review section start here  -->
+    <section class="review" id="review">
+        <div class="heading">
+            <h2>Galeri produksi</h2>
+        </div>
+
+        <div class="swiper review-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box" data-toggle="modal" data-target="#modal1">
+                    <div class="img">
+                        <img src="images/produksi2.jpeg" alt="">
+                    </div>
+                    <div class="tool-caption">
+                        <h3>Karyawan produksi</h3>
+                        <p>Merupakan unit pegawai langsung dibawah manajemen perusahaan industri UMKM bu Tutut</p>
+                    </div>
+                </div>
+                <div class="swiper-slide box" data-toggle="modal" data-target="#modal2">
+                    <div class="img">
+                        <img src="images/produksi3.jpeg" alt="">
+                    </div>
+                    <div class="tool-caption">
+                        <h3>Alat produksi</h3>
+                        <p>Kunci utama kematangan produk yang khas dan sempurna</p>
+                    </div>
+                </div>
+                <div class="swiper-slide box" data-toggle="modal" data-target="#modal1">
+                    <div class="img">
+                        <img src="images/produksi4.jpeg" alt="">
+                    </div>
+                    <div class="tool-caption">
+                        <h3>Alat pengemasan</h3>
+                        <p>Pengemasan yang baik menghasilkan produk bakpia yang berdaya saing bagus</p>
+                    </div>
+                </div>
+                <div class="swiper-slide box" data-toggle="modal" data-target="#modal2">
+                    <div class="img">
+                        <img src="images/produksi5.jpeg" alt="">
+                    </div>
+                    <div class="tool-caption">
+                        <h3>Suasana produksi</h3>
+                        <p>Usaha home industru yang masih mempertahankan proses produksi yang tradisional dan ramah lingkungan</p>
+                    </div>
+                </div>
+                <!-- Add more tools as needed -->
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- review section ends here  -->
+
+    <!-- footer section start here  -->
+
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                    <h1 class="logoName"> Bakpia Kalila Store </h1>
+                </div>
+
+                <p>Sewugalur, Karangsewu, kabupaten Kulonprogo, Provinsi Daerah Istimewa Yogyakarta</p>
+
+            </div>
+            <div class="box">
+                <h3>Tautan cepat</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Beranda</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Produk</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Tentang</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Galeri</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Kontak</a>
+
+            </div>
+            <div class="box">
+                <h3>Kontak</h3>
+                <a href="#"> <i class="fas fa-phone"></i> 0819-0411-2135</a>
+                <a href="#"> <i class="fas fa-envelope"></i>bakpiakalila@gmail.com</a>
+
+            </div>
+
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+        <div class="credit">
+            created by <span>Agung Permana Mukti </span> | All rights reserved !
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
